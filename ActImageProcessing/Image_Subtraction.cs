@@ -35,7 +35,7 @@ namespace ActImageProcessing
             pictureBox2.Image = imageA;
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private Bitmap Subract()
         {
             Bitmap resultImage = new Bitmap(imageB.Width, imageB.Height);
 
@@ -60,8 +60,14 @@ namespace ActImageProcessing
                     else
                         resultImage.SetPixel(x, y, pixel);
                 }
-                pictureBox3.Image = resultImage;
             }
+            return resultImage;
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            pictureBox3.Image = Subract();
+        }
+
     }
 }
