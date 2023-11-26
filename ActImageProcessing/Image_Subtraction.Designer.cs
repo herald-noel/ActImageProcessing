@@ -34,6 +34,8 @@
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
+            openFileDialog1 = new OpenFileDialog();
+            openFileDialog2 = new OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -74,6 +76,7 @@
             button1.TabIndex = 3;
             button1.Text = "load image";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -83,6 +86,7 @@
             button2.TabIndex = 4;
             button2.Text = "load background";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button3
             // 
@@ -92,6 +96,16 @@
             button3.TabIndex = 5;
             button3.Text = "subtract";
             button3.UseVisualStyleBackColor = true;
+            // 
+            // openFileDialog1
+            // 
+            openFileDialog1.FileName = "openFileDialog1";
+            openFileDialog1.FileOk += openFileDialog1_FileOk;
+            // 
+            // openFileDialog2
+            // 
+            openFileDialog2.FileName = "openFileDialog2";
+            openFileDialog2.FileOk += openFileDialog2_FileOk;
             // 
             // Image_Subtraction
             // 
@@ -120,5 +134,7 @@
         private Button button1;
         private Button button2;
         private Button button3;
+        private OpenFileDialog openFileDialog1;
+        private OpenFileDialog openFileDialog2;
     }
 }
