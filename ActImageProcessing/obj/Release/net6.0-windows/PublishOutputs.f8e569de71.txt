@@ -1,0 +1,5 @@
+D:\Code\c-sharp\ActImageProcessing\ActImageProcessing\bin\Release\net6.0-windows\publish\ActImageProcessing.exe
+D:\Code\c-sharp\ActImageProcessing\ActImageProcessing\bin\Release\net6.0-windows\publish\ActImageProcessing.dll
+D:\Code\c-sharp\ActImageProcessing\ActImageProcessing\bin\Release\net6.0-windows\publish\ActImageProcessing.deps.json
+D:\Code\c-sharp\ActImageProcessing\ActImageProcessing\bin\Release\net6.0-windows\publish\ActImageProcessing.runtimeconfig.json
+D:\Code\c-sharp\ActImageProcessing\ActImageProcessing\bin\Release\net6.0-windows\publish\ActImageProcessing.pdb
