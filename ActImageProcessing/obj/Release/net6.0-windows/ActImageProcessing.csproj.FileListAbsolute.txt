@@ -16,3 +16,4 @@ D:\Code\c-sharp\ActImageProcessing\ActImageProcessing\obj\Release\net6.0-windows
 D:\Code\c-sharp\ActImageProcessing\ActImageProcessing\obj\Release\net6.0-windows\ActImageProcessing.genruntimeconfig.cache
 D:\Code\c-sharp\ActImageProcessing\ActImageProcessing\obj\Release\net6.0-windows\ref\ActImageProcessing.dll
 D:\Code\c-sharp\ActImageProcessing\ActImageProcessing\obj\Release\net6.0-windows\ActImageProcessing.Image_Subtraction.resources
+D:\Code\c-sharp\ActImageProcessing\ActImageProcessing\obj\Release\net6.0-windows\ActImageProcessing.sourcelink.json

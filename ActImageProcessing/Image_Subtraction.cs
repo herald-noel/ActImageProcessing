@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel;
+using WebCamLib;
 
 namespace ActImageProcessing
 {
@@ -6,6 +7,8 @@ namespace ActImageProcessing
     {
         Bitmap imageA, imageB, colorGreen;
         OpenFileDialog openFileDialog;
+
+        Device[] device;
 
         public Image_Subtraction()
         {
@@ -69,5 +72,20 @@ namespace ActImageProcessing
             pictureBox3.Image = Subract();
         }
 
+        private void startToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            device = DeviceManager.GetAllDevices();
+            device[0].ShowWindow(pictureBox1);
+        }
+
+        private void stopToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            device[0].Stop();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            device[0].Sendmessage();
+        }
     }
 }

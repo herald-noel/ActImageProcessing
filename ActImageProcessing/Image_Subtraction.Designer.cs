@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
@@ -36,9 +37,15 @@
             button3 = new Button();
             openFileDialog1 = new OpenFileDialog();
             openFileDialog2 = new OpenFileDialog();
+            menuStrip1 = new MenuStrip();
+            camerToolStripMenuItem = new ToolStripMenuItem();
+            startToolStripMenuItem = new ToolStripMenuItem();
+            stopToolStripMenuItem = new ToolStripMenuItem();
+            timer1 = new System.Windows.Forms.Timer(components);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // pictureBox1
@@ -108,6 +115,40 @@
             openFileDialog2.FileName = "openFileDialog2";
             openFileDialog2.FileOk += openFileDialog2_FileOk;
             // 
+            // menuStrip1
+            // 
+            menuStrip1.Items.AddRange(new ToolStripItem[] { camerToolStripMenuItem });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(1133, 24);
+            menuStrip1.TabIndex = 6;
+            menuStrip1.Text = "menuStrip1";
+            // 
+            // camerToolStripMenuItem
+            // 
+            camerToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { startToolStripMenuItem, stopToolStripMenuItem });
+            camerToolStripMenuItem.Name = "camerToolStripMenuItem";
+            camerToolStripMenuItem.Size = new Size(60, 20);
+            camerToolStripMenuItem.Text = "Camera";
+            // 
+            // startToolStripMenuItem
+            // 
+            startToolStripMenuItem.Name = "startToolStripMenuItem";
+            startToolStripMenuItem.Size = new Size(180, 22);
+            startToolStripMenuItem.Text = "Start";
+            startToolStripMenuItem.Click += startToolStripMenuItem_Click;
+            // 
+            // stopToolStripMenuItem
+            // 
+            stopToolStripMenuItem.Name = "stopToolStripMenuItem";
+            stopToolStripMenuItem.Size = new Size(180, 22);
+            stopToolStripMenuItem.Text = "Stop";
+            stopToolStripMenuItem.Click += stopToolStripMenuItem_Click;
+            // 
+            // timer1
+            // 
+            timer1.Tick += timer1_Tick;
+            // 
             // Image_Subtraction
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -119,12 +160,17 @@
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
+            Controls.Add(menuStrip1);
+            MainMenuStrip = menuStrip1;
             Name = "Image_Subtraction";
             Text = "Image Subtraction";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -137,5 +183,10 @@
         private Button button3;
         private OpenFileDialog openFileDialog1;
         private OpenFileDialog openFileDialog2;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem camerToolStripMenuItem;
+        private ToolStripMenuItem startToolStripMenuItem;
+        private ToolStripMenuItem stopToolStripMenuItem;
+        private System.Windows.Forms.Timer timer1;
     }
 }
