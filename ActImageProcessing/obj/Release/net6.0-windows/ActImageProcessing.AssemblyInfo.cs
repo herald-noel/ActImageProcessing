@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ActImageProcessing")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dc56e09d4589a9e1025071a771ecdbaffe039b30")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+14f702ef6f647f65d6a5f67607fab09dea120a9b")]
 [assembly: System.Reflection.AssemblyProductAttribute("ActImageProcessing")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ActImageProcessing")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
