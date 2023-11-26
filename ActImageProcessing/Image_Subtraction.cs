@@ -34,5 +34,34 @@ namespace ActImageProcessing
             openFileDialog2.ShowDialog();
             pictureBox2.Image = imageA;
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Bitmap resultImage = new Bitmap(imageB.Width, imageB.Height);
+
+            Color myGreen = Color.FromArgb(0, 0, 255);
+            int greyGreen = (myGreen.R + myGreen.G + myGreen.B) / 3;
+            int threshold = 5;
+
+            int imageBWidth = imageB.Width;
+            int imageBHeight = imageB.Height;
+
+            for (int x = 0; x < imageBWidth; x++)
+            {
+                for (int y = 0; y < imageBHeight; y++)
+                {
+                    Color pixel = imageB.GetPixel(x, y);
+                    Color backPixel = imageA.GetPixel(x, y);
+                    int grey = (pixel.R + pixel.G + pixel.B) / 3;
+                    int subtractValue = Math.Abs(grey - greyGreen);
+
+                    if (subtractValue < threshold)
+                        resultImage.SetPixel(x, y, backPixel);
+                    else
+                        resultImage.SetPixel(x, y, pixel);
+                }
+                pictureBox3.Image = resultImage;
+            }
+        }
     }
 }
