@@ -76,11 +76,13 @@ namespace ActImageProcessing
         {
             device = DeviceManager.GetAllDevices();
             device[0].ShowWindow(pictureBox1);
+            timer1.Start();
         }
 
         private void stopToolStripMenuItem_Click(object sender, EventArgs e)
         {
             device[0].Stop();
+            timer1.Stop();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
