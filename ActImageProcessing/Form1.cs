@@ -124,5 +124,10 @@ namespace ActImageProcessing
             }
         }
 
+        private void subtractionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Image_Subtraction IMAGE_SUBTRACTION = new();
+            IMAGE_SUBTRACTION.Show();
+        }
     }
 }
